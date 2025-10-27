@@ -24,18 +24,42 @@ const props = withDefaults(defineProps<IProps>(), {
   gap: 8px;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  padding: 16px 32px;
+  height: 50px;
+  padding: 14px 28px;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-white);
   background: var(--color-primary);
-  border-radius: 16px;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: var(--color-primary-hover, var(--color-primary));
+    color: var(--color-white);
+  }
 
   &[data-layout='secondary'] {
     color: var(--color-primary);
-    background-color: var(--color-transparent);
-    border-color: var(--color-primary);
+    background: transparent;
+    border: 1px solid var(--color-primary);
+
+    &:hover:not(:disabled) {
+      color: var(--color-white);
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 }
 </style>

@@ -1,7 +1,7 @@
 {
-  "name": "is-components-new",
-  "description": "Is components",
-  "version": "0.0.4",
+  "name": "@ekaterina257/vue-button",
+  "description": "Vue 3 button component",
+  "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",

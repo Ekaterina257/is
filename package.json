@@ -1,7 +1,7 @@
 {
-  "name": "is-components",
-  "description": "Is components",
-  "version": "0.0.0",
+  "name": "is-components1",
+  "description": "Vue 3 UI components library with modern design",
+  "version": "0.0.5",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",

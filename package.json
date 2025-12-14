@@ -1,7 +1,7 @@
 {
   "name": "subnet-ui-katya",
   "description": "Vue 3 UI components library for subnet calculator by Katya",
-  "version": "0.0.7",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",

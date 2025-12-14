@@ -1,4 +1,5 @@
 <template>
+
   <button
     :class="$style.button"
     :data-layout="props.layout"
@@ -6,6 +7,7 @@
     :type="props.type"
   >
     <slot />
+
   </button>
 </template>
 
@@ -14,13 +16,16 @@ interface IProps {
   layout?: 'primary' | 'secondary'
   isDisabled?: boolean
   type?: 'submit' | 'button'
+
 }
 
 const props = withDefaults(defineProps<IProps>(), {
   layout: 'primary',
+
   isDisabled: false,
   type: 'button'
 })
+
 </script>
 
 <style module lang="scss">
@@ -49,6 +54,7 @@ const props = withDefaults(defineProps<IProps>(), {
   }
 
   &[data-disabled='true'] {
+
     opacity: 0.6;
     cursor: not-allowed;
   }
@@ -63,3 +69,4 @@ const props = withDefaults(defineProps<IProps>(), {
 }
 }
 </style>
+
